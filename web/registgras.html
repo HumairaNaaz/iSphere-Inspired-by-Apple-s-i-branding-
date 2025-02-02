@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+    background-image: url("assets/box3.webp");
+    background-size: cover;
+    
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color : white;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      background-color:goldenrod;
+      color:black;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .btn-register {
+      background-color:goldenrod;
+      color:black;
+    }
+
+    .msg-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .msg-success {
+      color: green;
+    }
+
+    .msg-error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Register</h3>
+    </div>
+    <div class="card-body">
+        <form action="data2"  method="post"  id="registrationForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-block btn-register">Register</button>
+      </form>
+      <div class="msg-container">
+        <p class="msg-success" id="successMsg" style="display: none;">Registration successful!</p>
+        <p class="msg-error" id="errorMsg" style="display: none;">Error during registration. Please try again.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Simulate form submission
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // Add your registration logic here
+    // For now, let's just simulate success or failure
+    var isSuccess = Math.random() < 0.8; // 80% success rate
+
+    if (isSuccess) {
+      document.getElementById("successMsg").style.display = "block";
+      document.getElementById("errorMsg").style.display = "none";
+    } else {
+      document.getElementById("successMsg").style.display = "none";
+      document.getElementById("errorMsg").style.display = "block";
+    }
+  });
+</script>-->
+
+</body>
+</html>
