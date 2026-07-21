@@ -2,6 +2,8 @@
 
 A Java-based e-commerce product showcase website inspired by Apple's official website. Features product displays for iPhones, iPads, MacBooks, Apple Watch, and AirPods along with user login and registration functionality.
 
+Live : https://agent-6a5fd4b78117e09--whimsical-marigold-3d21a0.netlify.app/
+
 ## Features
 - Apple-style homepage with product hero sections (iPhone 11 Pro, iPhone 11, MacBook, iPad Pro, Apple Watch)
 - Secondary product showcase page (iMac, iPhone 12 Pro, iPhone 12, Apple Watch)
